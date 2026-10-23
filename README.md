@@ -60,10 +60,10 @@ The table below profiles top managed model serving platforms and serverless GPU 
 
 ## 🛠️ Open-Source GitHub Projects
 
-The following open-source frameworks power modern self-hosted and cloud-native model serving. Sorted in strictly descending order by **GitHub Stars** ⭐.
+The following open-source frameworks power modern self-hosted and cloud-native model serving. Sorted in strictly descending order by **GitHub_Stars** ⭐.
 
 ### 1. 🦙 Ollama
-[![GitHub stars](https://img.shields.io/github/stars/ollama/ollama?style=social&color=white)](https://github.com/ollama/ollama/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/ollama/ollama?style=social&color=white)](https://github.com/ollama/ollama/stargazers)
 * **Repository**: [`ollama/ollama`](https://github.com/ollama/ollama)
 * **License**: MIT
 * **Primary Focus**: Local & Edge LLM Serving, Desktop Daemon, OpenAI-Compatible REST API
@@ -78,7 +78,7 @@ The following open-source frameworks power modern self-hosted and cloud-native m
 ---
 
 ### 2. ⚡ vLLM
-[![GitHub stars](https://img.shields.io/github/stars/vllm-project/vllm?style=social&color=white)](https://github.com/vllm-project/vllm/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/vllm-project/vllm?style=social&color=white)](https://github.com/vllm-project/vllm/stargazers)
 * **Repository**: [`vllm-project/vllm`](https://github.com/vllm-project/vllm)
 * **License**: Apache 2.0
 * **Primary Focus**: High-Throughput LLM Inference Engine, PagedAttention Memory Management
@@ -93,7 +93,7 @@ The following open-source frameworks power modern self-hosted and cloud-native m
 ---
 
 ### 3. 🧠 LocalAI
-[![GitHub stars](https://img.shields.io/github/stars/mudler/LocalAI?style=social&color=white)](https://github.com/mudler/LocalAI/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/mudler/LocalAI?style=social&color=white)](https://github.com/mudler/LocalAI/stargazers)
 * **Repository**: [`mudler/LocalAI`](https://github.com/mudler/LocalAI)
 * **License**: MIT
 * **Primary Focus**: Self-Hosted Multimodal AI Middleware, Drop-in OpenAI Alternative
@@ -107,7 +107,7 @@ The following open-source frameworks power modern self-hosted and cloud-native m
 ---
 
 ### 4. 🌐 Ray Serve
-[![GitHub stars](https://img.shields.io/github/stars/ray-project/ray?style=social&color=white)](https://github.com/ray-project/ray/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/ray-project/ray?style=social&color=white)](https://github.com/ray-project/ray/stargazers)
 * **Repository**: [`ray-project/ray`](https://github.com/ray-project/ray)
 * **License**: Apache 2.0
 * **Primary Focus**: Distributed Model Orchestration, Multi-Replica Gang Scheduling, Autoscaling
@@ -122,7 +122,7 @@ The following open-source frameworks power modern self-hosted and cloud-native m
 ---
 
 ### 5. ⚡ SGLang
-[![GitHub stars](https://img.shields.io/github/stars/sgl-project/sglang?style=social&color=white)](https://github.com/sgl-project/sglang/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/sgl-project/sglang?style=social&color=white)](https://github.com/sgl-project/sglang/stargazers)
 * **Repository**: [`sgl-project/sglang`](https://github.com/sgl-project/sglang)
 * **License**: Apache 2.0
 * **Primary Focus**: Structured Generation, RadixAttention Multi-Turn Cache Reuse, High-Speed LLM Serving
@@ -137,7 +137,7 @@ The following open-source frameworks power modern self-hosted and cloud-native m
 ---
 
 ### 6. 📱 MLC-LLM
-[![GitHub stars](https://img.shields.io/github/stars/mlc-ai/mlc-llm?style=social&color=white)](https://github.com/mlc-ai/mlc-llm/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/mlc-ai/mlc-llm?style=social&color=white)](https://github.com/mlc-ai/mlc-llm/stargazers)
 * **Repository**: [`mlc-ai/mlc-llm`](https://github.com/mlc-ai/mlc-llm)
 * **License**: Apache 2.0
 * **Primary Focus**: Universal Compiler-Based Serving, Cross-Platform Edge & WebGPU Deployment
@@ -151,7 +151,7 @@ The following open-source frameworks power modern self-hosted and cloud-native m
 ---
 
 ### 7. 🏎️ NVIDIA TensorRT-LLM
-[![GitHub stars](https://img.shields.io/github/stars/NVIDIA/TensorRT-LLM?style=social&color=white)](https://github.com/NVIDIA/TensorRT-LLM/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/NVIDIA/TensorRT-LLM?style=social&color=white)](https://github.com/NVIDIA/TensorRT-LLM/stargazers)
 * **Repository**: [`NVIDIA/TensorRT-LLM`](https://github.com/NVIDIA/TensorRT-LLM)
 * **License**: Apache 2.0
 * **Primary Focus**: Peak NVIDIA Hardware Acceleration, In-Flight Batching, Kernel Fusions
@@ -165,7 +165,7 @@ The following open-source frameworks power modern self-hosted and cloud-native m
 ---
 
 ### 8. 🛡️ Triton Inference Server
-[![GitHub stars](https://img.shields.io/github/stars/triton-inference-server/server?style=social&color=white)](https://github.com/triton-inference-server/server/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/triton-inference-server/server?style=social&color=white)](https://github.com/triton-inference-server/server/stargazers)
 * **Repository**: [`triton-inference-server/server`](https://github.com/triton-inference-server/server)
 * **License**: BSD-3-Clause
 * **Primary Focus**: Multi-Framework Enterprise Serving, Dynamic Batching, Concurrent Execution
@@ -180,7 +180,7 @@ The following open-source frameworks power modern self-hosted and cloud-native m
 ---
 
 ### 9. 🤗 Text Generation Inference (TGI)
-[![GitHub stars](https://img.shields.io/github/stars/huggingface/text-generation-inference?style=social&color=white)](https://github.com/huggingface/text-generation-inference/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/huggingface/text-generation-inference?style=social&color=white)](https://github.com/huggingface/text-generation-inference/stargazers)
 * **Repository**: [`huggingface/text-generation-inference`](https://github.com/huggingface/text-generation-inference)
 * **License**: Apache 2.0 / Open RAIL
 * **Primary Focus**: Production LLM Serving, Hugging Face Hub Integration, Token Streaming
@@ -195,7 +195,7 @@ The following open-source frameworks power modern self-hosted and cloud-native m
 ---
 
 ### 10. 🔄 Xinference
-[![GitHub stars](https://img.shields.io/github/stars/xorbitsai/inference?style=social&color=white)](https://github.com/xorbitsai/inference/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/xorbitsai/inference?style=social&color=white)](https://github.com/xorbitsai/inference/stargazers)
 * **Repository**: [`xorbitsai/inference`](https://github.com/xorbitsai/inference)
 * **License**: Apache 2.0
 * **Primary Focus**: Distributed Multimodal Inference, Unified Backend Abstraction
@@ -209,7 +209,7 @@ The following open-source frameworks power modern self-hosted and cloud-native m
 ---
 
 ### 11. 🍱 BentoML
-[![GitHub stars](https://img.shields.io/github/stars/bentoml/BentoML?style=social&color=white)](https://github.com/bentoml/BentoML/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/bentoml/BentoML?style=social&color=white)](https://github.com/bentoml/BentoML/stargazers)
 * **Repository**: [`bentoml/BentoML`](https://github.com/bentoml/BentoML)
 * **License**: Apache 2.0
 * **Primary Focus**: Model Packaging, Multi-Model Composition, Adaptive Micro-Batching
@@ -224,7 +224,7 @@ The following open-source frameworks power modern self-hosted and cloud-native m
 ---
 
 ### 12. ☸️ KServe
-[![GitHub stars](https://img.shields.io/github/stars/kserve/kserve?style=social&color=white)](https://github.com/kserve/kserve/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/kserve/kserve?style=social&color=white)](https://github.com/kserve/kserve/stargazers)
 * **Repository**: [`kserve/kserve`](https://github.com/kserve/kserve)
 * **License**: Apache 2.0
 * **Primary Focus**: Kubernetes-Native Inference, Declarative CRDs, Scale-to-Zero Elasticity
@@ -238,7 +238,7 @@ The following open-source frameworks power modern self-hosted and cloud-native m
 ---
 
 ### 13. 🕸️ Seldon Core
-[![GitHub stars](https://img.shields.io/github/stars/SeldonIO/seldon-core?style=social&color=white)](https://github.com/SeldonIO/seldon-core/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/SeldonIO/seldon-core?style=social&color=white)](https://github.com/SeldonIO/seldon-core/stargazers)
 * **Repository**: [`SeldonIO/seldon-core`](https://github.com/SeldonIO/seldon-core)
 * **License**: Apache 2.0
 * **Primary Focus**: Complex Inference Graphs, Multi-Armed Bandits, Explainability & Governance
@@ -252,7 +252,7 @@ The following open-source frameworks power modern self-hosted and cloud-native m
 ---
 
 ### 14. 🚀 DeepSpeed-MII
-[![GitHub stars](https://img.shields.io/github/stars/deepspeedai/DeepSpeed-MII?style=social&color=white)](https://github.com/deepspeedai/DeepSpeed-MII/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/deepspeedai/DeepSpeed-MII?style=social&color=white)](https://github.com/deepspeedai/DeepSpeed-MII/stargazers)
 * **Repository**: [`deepspeedai/DeepSpeed-MII`](https://github.com/deepspeedai/DeepSpeed-MII)
 * **License**: Apache 2.0
 * **Primary Focus**: Low-Latency Acceleration, Dynamic SplitFuse, Microsoft DeepSpeed Integration
@@ -266,7 +266,7 @@ The following open-source frameworks power modern self-hosted and cloud-native m
 ---
 
 ### 15. 📦 Truss
-[![GitHub stars](https://img.shields.io/github/stars/basetenlabs/truss?style=social&color=white)](https://github.com/basetenlabs/truss/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/basetenlabs/truss?style=social&color=white)](https://github.com/basetenlabs/truss/stargazers)
 * **Repository**: [`basetenlabs/truss`](https://github.com/basetenlabs/truss)
 * **License**: Apache 2.0
 * **Primary Focus**: Containerized Model Packaging, Developer CLI, Portable Serving Microservices
@@ -281,7 +281,7 @@ The following open-source frameworks power modern self-hosted and cloud-native m
 ---
 
 ### 16. ⚙️ OpenVINO Model Server (OVMS)
-[![GitHub stars](https://img.shields.io/github/stars/openvinotoolkit/model_server?style=social&color=white)](https://github.com/openvinotoolkit/model_server/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/openvinotoolkit/model_server?style=social&color=white)](https://github.com/openvinotoolkit/model_server/stargazers)
 * **Repository**: [`openvinotoolkit/model_server`](https://github.com/openvinotoolkit/model_server)
 * **License**: Apache 2.0
 * **Primary Focus**: Intel Hardware Acceleration (Xeon, Core Ultra, Arc, Gaudi), C++ High-Throughput Serving
@@ -332,7 +332,7 @@ Contributions are welcome! Please follow these steps to add or update projects:
 
 1. **Fork** this repository.
 2. Edit [`README.md`](README.md) following the established table and markdown formatting.
-3. Ensure pricing, valuations, and star counts are factual, verified, and up to date.
+3. Ensure pricing, valuations, and Stars_Counts are factual, verified, and up to date.
 4. Open a **Pull Request** with a descriptive summary of your additions.
 
 Check out our [Contributing Guidelines](.github/CONTRIBUTING.md) for details on code style and criteria.
@@ -362,3 +362,12 @@ If this curated repository helped you optimize, benchmark, or deploy your machin
 
 - Distributed under the [MIT License](LICENSE).
 - This is a community-curated directory for engineering evaluation. All product trademarks, logos, and brand names are property of their respective owners.
+
+## Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-ML-Model-Serving&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-ML-Model-Serving_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-ML-Model-Serving_growth.svg">
+  </picture>
+</a>
