@@ -1,0 +1,262 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c16" />
+      <stop offset="50%" stop-color="#0d1424" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primary-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="cyan-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="purple-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="emerald-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="subtle-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="drop-shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+
+    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.7" stroke-opacity="0.6"/>
+      <circle cx="40" cy="40" r="1" fill="#38bdf8" fill-opacity="0.3"/>
+    </pattern>
+
+    <style>
+      /* Dynamic Animations */
+      @keyframes pulseAura {
+        0% { transform: scale(0.95); opacity: 0.35; }
+        50% { transform: scale(1.08); opacity: 0.65; }
+        100% { transform: scale(0.95); opacity: 0.35; }
+      }
+
+      @keyframes streamFlow {
+        0% { stroke-dashoffset: 120; }
+        100% { stroke-dashoffset: 0; }
+      }
+
+      @keyframes floatSlow1 {
+        0% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-8px) rotate(1deg); }
+        100% { transform: translateY(0px) rotate(0deg); }
+      }
+
+      @keyframes floatSlow2 {
+        0% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(7px) rotate(-1deg); }
+        100% { transform: translateY(0px) rotate(0deg); }
+      }
+
+      @keyframes rotateRing {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+
+      @keyframes beaconBlink {
+        0%, 100% { opacity: 0.3; r: 3; }
+        50% { opacity: 1; r: 5; }
+      }
+
+      .pulse-blob-1 {
+        transform-origin: 220px 100px;
+        animation: pulseAura 8s infinite ease-in-out;
+      }
+
+      .pulse-blob-2 {
+        transform-origin: 980px 320px;
+        animation: pulseAura 10s infinite ease-in-out;
+      }
+
+      .data-stream-1 {
+        stroke-dasharray: 10, 14;
+        animation: streamFlow 2.8s linear infinite;
+      }
+
+      .data-stream-2 {
+        stroke-dasharray: 8, 12;
+        animation: streamFlow 2.2s linear infinite reverse;
+      }
+
+      .floating-pill-1 {
+        transform-origin: 180px 70px;
+        animation: floatSlow1 5s ease-in-out infinite;
+      }
+
+      .floating-pill-2 {
+        transform-origin: 1010px 85px;
+        animation: floatSlow2 6s ease-in-out infinite;
+      }
+
+      .floating-pill-3 {
+        transform-origin: 210px 345px;
+        animation: floatSlow2 5.5s ease-in-out infinite;
+      }
+
+      .floating-pill-4 {
+        transform-origin: 990px 335px;
+        animation: floatSlow1 6.5s ease-in-out infinite;
+      }
+
+      .rotating-orbit {
+        transform-origin: 600px 70px;
+        animation: rotateRing 20s linear infinite;
+      }
+
+      .beacon-dot-1 {
+        animation: beaconBlink 2.5s ease-in-out infinite;
+      }
+
+      .beacon-dot-2 {
+        animation: beaconBlink 2.5s ease-in-out infinite 1.25s;
+      }
+    </style>
+  </defs>
+
+  <!-- Layer 1: Background & Grid Canvas -->
+  <rect width="1200" height="420" fill="url(#bg-grad)" rx="16"/>
+  <rect width="1200" height="420" fill="url(#grid-pattern)" rx="16"/>
+
+  <!-- Layer 2: Subtle Ambient Light Blooms (Deep background) -->
+  <g id="ambient-glows">
+    <circle class="pulse-blob-1" cx="220" cy="100" r="160" fill="#38bdf8" opacity="0.18" filter="url(#neon-glow)"/>
+    <circle class="pulse-blob-2" cx="980" cy="320" r="180" fill="#818cf8" opacity="0.18" filter="url(#neon-glow)"/>
+    <circle cx="600" cy="200" r="220" fill="#c084fc" opacity="0.08" filter="url(#neon-glow)"/>
+  </g>
+
+  <!-- Layer 3: Dynamic Data Flow Lines (Passing in background below text) -->
+  <g id="animated-network-flows" opacity="0.75">
+    <!-- Curved Pipeline 1 -->
+    <path class="data-stream-1" d="M 80 140 C 260 60, 400 120, 600 60 C 800 0, 940 100, 1120 70" 
+          fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Curved Pipeline 2 -->
+    <path class="data-stream-2" d="M 80 340 C 280 380, 420 310, 600 350 C 780 390, 960 300, 1120 330" 
+          fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Connecting Bus Nodes -->
+    <circle cx="160" cy="120" r="3" fill="#38bdf8" class="beacon-dot-1"/>
+    <circle cx="480" cy="85" r="3.5" fill="#818cf8" class="beacon-dot-2"/>
+    <circle cx="750" cy="65" r="3" fill="#c084fc" class="beacon-dot-1"/>
+    <circle cx="1040" cy="82" r="4" fill="#38bdf8" class="beacon-dot-2"/>
+
+    <circle cx="160" cy="355" r="3.5" fill="#a855f7" class="beacon-dot-2"/>
+    <circle cx="460" cy="325" r="3" fill="#ec4899" class="beacon-dot-1"/>
+    <circle cx="760" cy="365" r="3.5" fill="#38bdf8" class="beacon-dot-2"/>
+    <circle cx="1040" cy="325" r="3" fill="#10b981" class="beacon-dot-1"/>
+  </g>
+
+  <!-- Layer 4: Floating Tech Metrics Pills (Positioned safely away from center title) -->
+  <g id="floating-status-pills">
+    <!-- Pill 1: Top Left - PagedAttention -->
+    <g class="floating-pill-1">
+      <rect x="70" y="50" width="220" height="38" rx="19" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.8" filter="url(#drop-shadow)"/>
+      <circle cx="90" cy="69" r="5" fill="#38bdf8" class="beacon-dot-1"/>
+      <text x="106" y="74" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" letter-spacing="0.3">
+        ⚡ PagedAttention &amp; vLLM
+      </text>
+    </g>
+
+    <!-- Pill 2: Top Right - Sub-10ms TTFT -->
+    <g class="floating-pill-2">
+      <rect x="900" y="65" width="225" height="38" rx="19" fill="#0f172a" stroke="#10b981" stroke-width="1.2" stroke-opacity="0.8" filter="url(#drop-shadow)"/>
+      <circle cx="920" cy="84" r="5" fill="#10b981" class="beacon-dot-2"/>
+      <text x="936" y="89" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" letter-spacing="0.3">
+        🚀 High-Throughput / TTFT
+      </text>
+    </g>
+
+    <!-- Pill 3: Bottom Left - Kubernetes Scale-to-Zero -->
+    <g class="floating-pill-3">
+      <rect x="75" y="325" width="235" height="38" rx="19" fill="#0f172a" stroke="#a855f7" stroke-width="1.2" stroke-opacity="0.8" filter="url(#drop-shadow)"/>
+      <circle cx="95" cy="344" r="5" fill="#a855f7" class="beacon-dot-1"/>
+      <text x="111" y="349" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" letter-spacing="0.3">
+        ☸️ K8s Scale-to-Zero &amp; Knative
+      </text>
+    </g>
+
+    <!-- Pill 4: Bottom Right - Multi-Framework Runtimes -->
+    <g class="floating-pill-4">
+      <rect x="885" y="315" width="245" height="38" rx="19" fill="#0f172a" stroke="#f43f5e" stroke-width="1.2" stroke-opacity="0.8" filter="url(#drop-shadow)"/>
+      <circle cx="905" cy="334" r="5" fill="#f43f5e" class="beacon-dot-2"/>
+      <text x="921" y="339" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" letter-spacing="0.3">
+        🎯 Triton &amp; BentoML Runtimes
+      </text>
+    </g>
+  </g>
+
+  <!-- Layer 5: Dedicated Foreground Content (Guaranteed crisp and never obstructed) -->
+  <g id="foreground-content" filter="url(#drop-shadow)">
+    <!-- Central Badge Pill -->
+    <g transform="translate(485, 120)">
+      <rect x="0" y="0" width="230" height="28" rx="14" fill="#1e293b" fill-opacity="0.8" stroke="url(#primary-glow)" stroke-width="1"/>
+      <text x="115" y="18" text-anchor="middle" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" letter-spacing="1.2">
+        PRODUCTION MLOPS &amp; SERVING
+      </text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="196" text-anchor="middle" 
+          font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" 
+          font-size="44" font-weight="800" letter-spacing="-0.8">
+      <tspan fill="#ffffff">Awesome </tspan>
+      <tspan fill="url(#primary-glow)">ML Model Serving</tspan>
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="600" y="236" text-anchor="middle" 
+          fill="#94a3b8" 
+          font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" 
+          font-size="16.5" font-weight="500" letter-spacing="0.4">
+      Curated Ecosystem of LLM Engines, Serverless GPU Clouds, Kubernetes Platforms &amp; Frameworks
+    </text>
+
+    <!-- Divider Bar -->
+    <rect x="420" y="258" width="360" height="2" rx="1" fill="url(#primary-glow)" opacity="0.65"/>
+
+    <!-- Key Categories Row -->
+    <g transform="translate(600, 282)">
+      <text text-anchor="middle" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">
+        <tspan fill="#38bdf8">⚡ Low-Latency Inference</tspan>
+        <tspan fill="#64748b">  •  </tspan>
+        <tspan fill="#a855f7">☁️ Serverless GPUs</tspan>
+        <tspan fill="#64748b">  •  </tspan>
+        <tspan fill="#10b981">📦 Multi-Framework Packaging</tspan>
+        <tspan fill="#64748b">  •  </tspan>
+        <tspan fill="#f59e0b">📊 Dynamic Batching</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
